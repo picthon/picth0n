@@ -56,6 +56,24 @@ def gen_user(choice):
             username = username+'bot'
         else:
             pass
+    if choice == "تيست":
+        c = random.choices(a) 
+        d = random.choices(b)
+        s = random.choices(e)
+        f = [c[0], s[0], d[0], d[0], d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        username = username+'bot'
+        if username in band[0]:
+            c = random.choices(a)
+            d = random.choices(b)
+            s = random.choices(e)
+            f = [c[0], s[0], d[0], d[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+            username = username+'bot'
+        else:
+            pass
     if choice == "خماسي_حرف":
         c = d = random.choices(a)
         d = random.choices(b)
@@ -138,6 +156,7 @@ async def _(event):
 سداسي_حرفين
 سداسي_حرف
 خماسي_حرفين
+تيست
 
 مثال π
 BH خماسي_حرفين @User
