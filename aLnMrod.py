@@ -46,7 +46,7 @@ def gen_user(choice):
         random.shuffle(f)
         username = ''.join(f)
         username = username+'bot'
-        if username in banned[0]:
+        if username in band[0]:
             c = random.choices(a)
             d = random.choices(b)
             s = random.choices(e)
@@ -62,7 +62,7 @@ def gen_user(choice):
         f = [c[0], d[0], d[0], d[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
-        if username in banned[0]:
+        if username in band[0]:
             c = d = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], d[0], d[0], d[0]]
@@ -76,7 +76,7 @@ def gen_user(choice):
         f = [c[0], d[0], d[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
-        if username in banned[0]:
+        if username in band[0]:
             c = d = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], d[0], c[0], d[0]]
@@ -90,7 +90,7 @@ def gen_user(choice):
         f = [c[0], d[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
-        if username in banned[0]:
+        if username in band[0]:
             c = d = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], c[0], c[0], c[0], d[0]]
@@ -104,7 +104,7 @@ def gen_user(choice):
         f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
         random.shuffle(f)
         username = ''.join(f)
-        if username in banned[0]:
+        if username in band[0]:
             c = d = random.choices(a)
             d = random.choices(b)
             f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
@@ -118,7 +118,7 @@ def gen_user(choice):
         f = [c[0], d[0], d[0], d[0], c[0], c[0]]
         random.shuffle(f)
         username = ''.join(f)
-        if username in banned[0]:
+        if username in band[0]:
             c = d = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], d[0], d[0],  c[0], c[0]]
@@ -150,8 +150,8 @@ async def _(event):
         isclaim.clear()
         isclaim.append("on")
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 2)
-        c = str(msg[2])
-        choice = str(msg[1])
+        c = str(msg[1])
+        choice = str(msg[0])
         await event.edit(f"تم بدأ الصيد .! قناة السورس @TurbobH")
 
         @a.on(events.NewMessage(outgoing=True, pattern=r"الصيد"))
@@ -177,7 +177,6 @@ async def _(event):
             t.join()
             isav = que.get()
             if "Available" in isav:
-            await asyncio.sleep(1)
                 try:
                     await a(functions.channels.UpdateUsernameRequest(
                         channel=bh, username=username))
@@ -201,18 +200,19 @@ async def _(event):
                     else:
                         pass
                     t += 2
-
+                    await asyncio.sleep(1)
         isclaim.clear()
         isclaim.append("off")
         t = ""
     
 @a.on(events.NewMessage(outgoing=True, pattern=r"تيربو"))
 async def _(event):
-    await a(JoinChannelRequest("k_i_o"))
+    await a(JoinChannelRequest("AbnBashaar"))
     await a.send_message(event.chat_id, '''تثبيت قناة + يوزر قناتك + يوزر
 BH + نوع + يوزر قناتك
 تثبيت حساب + يوزر
-ايقاف = ايقاف
+stop = ايقاف
+الصيد = عدد لنقرات
 وضع اليوزر دون @
 ''')
 
