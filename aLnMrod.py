@@ -179,6 +179,7 @@ async def _(event):
             t.join()
             isav = que.get()
             if "Available" in isav:
+            await asyncio.sleep(1)
                 try:
                     await a(functions.channels.UpdateUsernameRequest(
                         channel=bh, username=username))
@@ -254,6 +255,7 @@ async def _(event):
                 else: 
                     pass
                 trys += 1
+                await asyncio.sleep(1)
             trys = ""
             isauto.clear()
             isauto.append("off")
