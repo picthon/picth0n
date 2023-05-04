@@ -10,27 +10,27 @@
     ],
     "website": "https://github.com/",
     "env": {
-        "app_id": {
+        "APP_ID": {
             "description": "ايبي ايدي",
             "value": "",
             "required": true
         },
-        "app_hash": {
+        "APP_ID": {
             "description": "هاش",
             "value": "",
             "required": true
         },
-        "termux": {
+        "TERMUX": {
             "description": "كود تيرمكس",
             "value": "",
             "required": true
         },
-        "token": {
+        "TOKEN": {
             "description": "توكن",
             "value": "",
             "required": true
         },
-        "bot_username": {
+        "BOT_USERNAME": {
             "description": "يوزر البوت",
             "value": "",
             "required": true
