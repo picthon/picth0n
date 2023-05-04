@@ -1,0 +1,39 @@
+{
+    "name": "ميو",
+    "description": "User bot for telegram !",
+    "stack": "container",
+    "repository": "https://github.com/bhthh/ah",
+    "keywords": [
+        "python",
+        "chatbot",
+        "telegrambot"
+    ],
+    "website": "https://github.com/",
+    "env": {
+        "app_id": {
+            "description": "ايبي ايدي",
+            "value": "",
+            "required": true
+        },
+        "app_hash": {
+            "description": "هاش",
+            "value": "",
+            "required": true
+        },
+        "termux": {
+            "description": "كود تيرمكس",
+            "value": "",
+            "required": true
+        },
+        "token": {
+            "description": "توكن",
+            "value": "",
+            "required": true
+        },
+        "bot_username": {
+            "description": "يوزر البوت",
+            "value": "",
+            "required": true
+        }
+    }
+}
