@@ -40,7 +40,6 @@ def check_user(username):
     else:
         return "Unavailable"
 
-
 def gen_user(choice):
     if choice == "ثلاثي_بوت":
         c = random.choices(a)
@@ -148,14 +147,12 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-        
     return username
 
 @a.on(events.NewMessage(outgoing=True, pattern=r"turbo"))
-async def _(event):
+async def bh(event):
     if ispay2[0] == "yes":
-        await event.edit('''
-خماسي_حرفين
+        await a.send_message(event.chat_id, '''خماسي_حرفين
 ثلاثي_بوت
 سداسي_مكرر
 سداسي_حرفين
@@ -163,13 +160,22 @@ async def _(event):
 خماسي_حرفين
 تيست
 
-مثال π
 BH خماسي_حرفين @User
 ''')
 
+@a.on(events.NewMessage(outgoing=True, pattern=r"تيربو"))
+async def bh(event):
+    await a(JoinChannelRequest("AbnBashaar"))
+    await a.send_message(event.chat_id, '''تثبيت قناة + يوزر قناتك + يوزر
+BH + نوع + يوزر قناتك
+تثبيت حساب + يوزر
+stop = ايقاف
+الصيد = عدد لنقرات
+وضع اليوزر دون @
+''')
 
 @a.on(events.NewMessage(outgoing=True, pattern=r"BH"))
-async def _(event):
+async def bh(event):
     if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
@@ -228,17 +234,6 @@ async def _(event):
         isclaim.clear()
         isclaim.append("off")
         t = ""
-    
-@a.on(events.NewMessage(outgoing=True, pattern=r"تيربو"))
-async def _(event):
-    await a(JoinChannelRequest("AbnBashaar"))
-    await a.send_message(event.chat_id, '''تثبيت قناة + يوزر قناتك + يوزر
-BH + نوع + يوزر قناتك
-تثبيت حساب + يوزر
-stop = ايقاف
-الصيد = عدد لنقرات
-وضع اليوزر دون @
-''')
 
 @a.on(events.NewMessage(outgoing=True, pattern=r"تثبيت"))
 async def _(event):
