@@ -151,8 +151,7 @@ def gen_user(choice):
 
 @a.on(events.NewMessage(outgoing=True, pattern=r"turbo"))
 async def bh(event):
-    if ispay2[0] == "yes":
-        await a.send_message(event.chat_id, '''خماسي_حرفين
+    await a.send_message(event.chat_id, '''خماسي_حرفين
 ثلاثي_بوت
 سداسي_مكرر
 سداسي_حرفين
