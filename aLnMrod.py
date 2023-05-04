@@ -180,7 +180,7 @@ async def _(event):
                 try:
                     await a(functions.channels.UpdateUsernameRequest(
                         channel=bh, username=username))
-                        await a.send_file("i5tbot", 'https://telegra.ph/file/6bd6a1cde2b1a9f2256f7.mp4', caption=f'''( @{user} ) تم الصيد
+                    await a.send_file("i5tbot", 'https://telegra.ph/file/6bd6a1cde2b1a9f2256f7.mp4', caption=f'''( @{user} ) تم الصيد
 المطور : @N_Mrod
 قناة السورس : @TurboBH''')
                     await event.client.send_message(event.chat_id, f'''
