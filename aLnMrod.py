@@ -22,6 +22,10 @@ with open("band.txt", "r") as f:
 
 que = Queue()
 
+a = 'qwertyuiopassdfghjklzxcvbnm'
+b = '1234567890'
+e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
+
 def check_user(username):
     url = "https://t.me/"+str(username)
     headers = {
