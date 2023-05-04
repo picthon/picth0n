@@ -8,7 +8,7 @@ session = os.environ.get("TERMUX")
 SESSION = os.environ.get("TERMUX")
 token = os.environ.get("TOKEN")
 a = TelegramClient(StringSession(session), API_ID, API_HASH)
-bot = TelegramClient("bot", APP_ID, API_HASH).start(bot_token=token)
+bot = TelegramClient("bot", API_ID, API_HASH).start(bot_token=token)
 ispay = ['yes']
 ispay2 = ['yes']
 bot.start()
