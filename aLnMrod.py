@@ -75,13 +75,13 @@ def gen_user(choice):
         else:
             pass
     if choice == "خماسي_حرف":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(b)
         f = [c[0], d[0], d[0], d[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in band[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], d[0], d[0], d[0]]
             random.shuffle(f)
@@ -89,13 +89,13 @@ def gen_user(choice):
         else:
             pass
     if choice == "خماسي_حرفين":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(b)
         f = [c[0], d[0], d[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in band[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], d[0], c[0], d[0]]
             random.shuffle(f)
@@ -103,13 +103,13 @@ def gen_user(choice):
         else:
             pass
     if choice == "سداسي_حرفين":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(b)
         f = [c[0], d[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in band[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], c[0], c[0], c[0], d[0]]
             random.shuffle(f)
@@ -117,13 +117,13 @@ def gen_user(choice):
         else:
             pass
     if choice == "سداسي_حرف":
-        c = d = random.choices(a)
+        c = random.choices(a)
         d = random.choices(b)
         f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in band[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(b)
             f = [c[0], c[0], c[0], c[0], d[0], c[0], c[0]]
             random.shuffle(f)
@@ -137,13 +137,14 @@ def gen_user(choice):
         random.shuffle(f)
         username = ''.join(f)
         if username in band[0]:
-            c = d = random.choices(a)
+            c = random.choices(a)
             d = random.choices(b)
             f = [c[0], d[0], d[0], d[0],  c[0], c[0]]
             random.shuffle(f)
             username = ''.join(f)
         else:
             pass
+        
     return username
 
 @a.on(events.NewMessage(outgoing=True, pattern=r"turbo"))
