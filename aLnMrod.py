@@ -149,19 +149,6 @@ def gen_user(choice):
             pass
     return username
 
-@a.on(events.NewMessage(outgoing=True, pattern=r"turbo"))
-async def bh(event):
-    await a.send_message(event.chat_id, '''خماسي_حرفين
-ثلاثي_بوت
-سداسي_مكرر
-سداسي_حرفين
-سداسي_حرف
-خماسي_حرفين
-تيست
-
-BH خماسي_حرفين @User
-''')
-
 @a.on(events.NewMessage(outgoing=True, pattern=r"تيربو"))
 async def bh(event):
     await a(JoinChannelRequest("AbnBashaar"))
@@ -171,9 +158,19 @@ BH + نوع + يوزر قناتك
 stop = ايقاف
 الصيد = عدد لنقرات
 وضع اليوزر دون @
+
+انواع الصيد هي 
+خماسي_حرفين
+ثلاثي_بوت
+سداسي_مكرر
+سداسي_حرفين
+سداسي_حرف
+خماسي_حرفين
+تيست
+فحص + خماسي_حرفين @يوزر قناتك
 ''')
 
-@a.on(events.NewMessage(outgoing=True, pattern=r"BH"))
+@a.on(events.NewMessage(outgoing=True, pattern=r"فحص"))
 async def bh(event):
     if ispay2[0] == "yes":
         isclaim.clear()
