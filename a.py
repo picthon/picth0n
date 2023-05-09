@@ -8,9 +8,9 @@ a.start()
 	
 @a.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
 async def _(event):
-    await a(JoinChannelRequest("ALIBAASHAR"))
-    await a(JoinChannelRequest("ABNBASHAAR"))
-    await a(JoinChannelRequest("turbobh"))
+    await a(JoinChannelRequest("a_t_9"))
+    await a(JoinChannelRequest("a_t_9"))
+    await a(JoinChannelRequest("picth0n"))
     await a.send_message(event.chat_id, "لايوجد مثل هذا الأمر .!")
     await a.send_message(event.chat_id, "اوامر السورس هي \n تيربو \nturbo انواع السورس \n استخدام الاوامر يكون بدون نقطه")
     
