@@ -1,40 +1,79 @@
-{
-    "name": "واتقو الله لعلكم ترحمون",
-    "description": "User bot for telegram !",
-    "stack": "container",
-    "logo" : "https://telegra.ph/file/3f8fdce85ac4f1d304e4a.jpg",
-    "repository": "https://github.com/bhthh/ah",
-    "keywords": [
-        "python",
-        "chatbot",
-        "telegrambot"
-    ],
-    "website": "https://github.com/bhthh/ah",
-    "env": {
-        "APP_ID": {
-            "description": "ايبي ايدي",
-            "value": "",
-            "required": true
-        },
-        "APP_HASH": {
-            "description": "هاش",
-            "value": "",
-            "required": true
-        },
-        "TERMUX": {
-            "description": "كود تيرمكس",
-            "value": "",
-            "required": true
-        },
-        "TOKEN": {
-            "description": "توكن",
-            "value": "",
-            "required": true
-        },
-        "BOT_USERNAME": {
-            "description": "يوزر البوت",
-            "value": "",
-            "required": true
-        }
-    }
+{
+
+    "name": "PICTHON",
+
+    "description": "User bot for telegram !",
+
+    "stack": "container",
+
+    "logo" : "https://i.postimg.cc/rmP8wX0k/20230507044740643.jpg",
+
+    "repository": "https://github.com/bhthh/ah",
+
+    "keywords": [
+
+        "python",
+
+        "chatbot",
+
+        "telegrambot"
+
+    ],
+
+    "website": "https://github.com/bhthh/ah",
+
+    "env": {
+
+        "APP_ID": {
+
+            "description": "ايبي ايدي",
+
+            "value": "",
+
+            "required": true
+
+        },
+
+        "APP_HASH": {
+
+            "description": "هاش",
+
+            "value": "",
+
+            "required": true
+
+        },
+
+        "TERMUX": {
+
+            "description": "كود تيرمكس",
+
+            "value": "",
+
+            "required": true
+
+        },
+
+        "TOKEN": {
+
+            "description": "توكن",
+
+            "value": "",
+
+            "required": true
+
+        },
+
+        "BOT_USERNAME": {
+
+            "description": "يوزر البوت",
+
+            "value": "",
+
+            "required": true
+
+        }
+
+    }
+
 }
