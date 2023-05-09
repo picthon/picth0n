@@ -151,9 +151,9 @@ def gen_user(choice):
 
 @a.on(events.NewMessage(outgoing=True, pattern=r"تيربو"))
 async def bh(event):
-    await a(JoinChannelRequest("AbnBashaar"))
+    await a(JoinChannelRequest("@a_t_9"))
     await a.send_message(event.chat_id, '''تثبيت قناة + يوزر قناتك + يوزر
-BH + نوع + يوزر قناتك
+PK + نوع + يوزر قناتك
 تثبيت حساب + يوزر
 stop = ايقاف
 الصيد = عدد لنقرات
@@ -178,7 +178,7 @@ async def bh(event):
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 2)
         c = str(msg[1])
         choice = str(msg[0])
-        await event.edit(f"تم بدأ الصيد .! قناة السورس @TurbobH")
+        await event.edit(f"تم بدأ الصيد .! قناة السورس @picth0n")
 
         @a.on(events.NewMessage(outgoing=True, pattern=r"الصيد"))
         async def _(event):
@@ -207,12 +207,12 @@ async def bh(event):
                     await a(functions.channels.UpdateUsernameRequest(
                         channel=bh, username=username))
                     await a.send_file("i5tbot", 'https://telegra.ph/file/6bd6a1cde2b1a9f2256f7.mp4', caption=f'''( @{username} ) تم الصيد
-المطور : @N_Mrod
-قناة السورس : @TurboBH''')
+المطور : @a_t_9
+قناة السورس : @picth0n''')
                     await event.client.send_message(event.chat_id, f'''
 ✪ ( @{username} ) تم الصيد
-المطور : @N_Mrod
-قناة السورس : @turboBh
+المطور : @a_t_9
+قناة السورس : @picth0n
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -257,11 +257,11 @@ async def _(event):
                             channel=ch, username=username))
                         
                         await a.send_file("i5tbot", 'https://telegra.ph/file/6bd6a1cde2b1a9f2256f7.mp4', caption=f'''( @{username} ) تم الصيد
-المطور : @N_Mrod
-قناة السورس : @TurboBH''')
+المطور : @a_t_9
+قناة السورس : @picth0n''')
                         await a.send_file(event.chat_id, 'https://telegra.ph/file/6bd6a1cde2b1a9f2256f7.mp4', caption=f'''( @{username} ) تم الصيد
-المطور : @N_Mrod
-قناة السورس : @TurboBH''')
+المطور : @a_t_9
+قناة السورس : @picth0n''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
                         await event.client.send_message(event.chat_id, f"band the @{username} ")
@@ -302,13 +302,13 @@ async def _(event):
 User ⤷ @{username} 
 Save ⤷ account
 Clicks ⤷ {trys}
-turbo ⤷ @turboBH
+turbo ⤷ @picth0n
 ''')
                         await a.send_file("i5tbot", 'https://telegra.ph/file/6bd6a1cde2b1a9f2256f7.mp4', caption=f'''the Leader : @AbnBasher
 User ⤷ @{username}
 Save ⤷ account
 Clicks ⤷ {trys}
-turbo ⤷ @turboBH
+turbo ⤷ @picth0n
 ''')
                         break
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
